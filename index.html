@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/svg" sizes="16x16" href="https://cdn.worldvectorlogo.com/logos/bookingcom-1.svg">
+    <script src="https://kit.fontawesome.com/347b4bbeba.js" crossorigin="anonymous"></script>
+
+    <script defer src="./main.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Booking.clone | Clone non officiel | La meilleure copie en HTML & CSS</title>
+</head>
+<body>
+    <header>
+        <div class="header_line_top">
+
+            <div class="logo">
+                <svg width="154" height="26" viewBox="0 0 2710 424" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="2710" height="424" fill=""/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1792.16 280.76C1827.32 280.76 1854 252.631 1854.19 252.394L1857.74 248.627L1884.66 293.271L1882.87 295.483C1882.55 295.878 1849.05 336.36 1787.47 336.36C1716.47 336.36 1665 286.475 1665 217.733C1665 148.937 1717.04 99 1788.79 99C1822.32 99 1872.18 113.223 1872.18 152.414V182.123L1838.2 182.071C1833.18 182.099 1828.29 180.47 1824.29 177.436C1820.29 174.403 1817.4 170.135 1816.08 165.293L1815.79 164.108C1813.71 157.076 1800.43 152.914 1788.79 152.914C1752.86 152.914 1727.79 179.384 1727.79 217.259C1727.79 261.112 1760.13 280.76 1792.16 280.76Z" fill="#0896FF"/>
+                    <path d="M2106.97 278.864C2074.41 278.864 2051.71 253 2051.71 216.021C2051.71 179.069 2074.41 153.231 2106.97 153.231C2139.68 153.231 2162.62 179.069 2162.62 216.021C2162.62 253.58 2140.23 278.864 2106.97 278.864ZM2106.97 98C2038.02 98 1988 147.647 1988 216.021C1988 284.422 2038.02 334.043 2106.97 334.043C2176.08 334.043 2226.36 284.422 2226.36 216.048C2226.36 147.647 2176.05 98 2106.97 98" fill="#0896FF"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1969.22 42.8949C1967.05 21.1253 1951.5 18 1934.82 18H1904L1904.08 333.558H1969.22V42.8949Z" fill="#0896FF"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2312.69 122.313C2324.59 109.802 2345.82 95 2379.12 95V95.0263C2432.29 95.0263 2460.39 125.473 2460.39 183.049L2460.5 328.014H2429.58C2405.95 328.014 2395.02 316.978 2395.02 293.379V194.111C2395.02 166.456 2387.09 155.736 2366.81 155.736C2341.61 155.736 2321.43 171.038 2314.22 195.665C2311.48 203.803 2310.16 212.705 2310.16 222.977V328.014H2245.18L2245 100.11H2274.32C2292.04 100.11 2303.84 107.458 2307.32 120.864L2308.74 126.316L2312.69 122.313Z" fill="#0896FF"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2540 248H2594.74C2652.68 248 2690.09 216.005 2690.09 166.435C2690.09 154.96 2688.1 145.196 2685.11 137H2624.8C2628.75 143.789 2630.44 151.87 2630.44 159.41C2630.44 182.643 2616.91 196.509 2594.34 196.509H2567.99C2554.85 195.614 2548.85 188.694 2548.85 174.144V157.515V137H2540V248Z" fill="#0896FF"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2608.16 280.76C2643.32 280.76 2670 252.631 2670.19 252.394L2673.74 248.627L2700.66 293.271L2698.87 295.483C2698.55 295.878 2665.05 336.36 2603.47 336.36C2532.47 336.36 2481 286.475 2481 217.733C2481 148.937 2533.04 99 2604.79 99C2638.32 99 2688.18 113.223 2688.18 152.414V182.123L2654.2 182.071C2649.18 182.099 2644.29 180.47 2640.29 177.436C2636.29 174.403 2633.4 170.135 2632.08 165.293L2631.79 164.108C2629.71 157.076 2616.43 152.914 2604.79 152.914C2568.86 152.914 2543.79 179.384 2543.79 217.259C2543.79 261.112 2576.13 280.76 2608.16 280.76Z" fill="#0896FF"/>
+                    <path d="M981.83 43.1681C981.83 33.1372 985.815 23.5171 992.908 16.4242C1000 9.33125 1009.62 5.34646 1019.65 5.34646C1029.68 5.34646 1039.3 9.33125 1046.4 16.4242C1053.49 23.5171 1057.47 33.1372 1057.47 43.1681C1057.11 52.9548 1052.96 62.2189 1045.91 69.0135C1038.86 75.8082 1029.45 79.6044 1019.65 79.6044C1009.86 79.6044 1000.45 75.8082 993.393 69.0135C986.34 62.2189 982.195 52.9548 981.83 43.1681" fill="#FFF"/>
+                    <path d="M1578.58 295.409C1578.58 274.417 1595.48 257.455 1616.32 257.455C1626.38 257.455 1636.02 261.451 1643.14 268.564C1650.25 275.677 1654.25 285.323 1654.25 295.382C1654.25 305.441 1650.25 315.088 1643.14 322.201C1636.02 329.313 1626.38 333.309 1616.32 333.309C1595.51 333.309 1578.58 316.321 1578.58 295.382" fill="#0896FF"/>
+                    <path d="M361.119 279C328.565 279 305.913 253.136 305.913 216.157C305.913 179.204 328.564 153.367 361.144 153.367C393.883 153.367 416.771 179.204 416.771 216.157C416.771 253.715 394.384 279 361.119 279V279ZM361.119 98.1355C292.218 98.1355 242.201 147.783 242.201 216.157C242.201 284.557 292.244 334.178 361.119 334.178C430.309 334.178 480.509 284.557 480.509 216.183C480.509 147.783 430.308 98.1355 361.144 98.1355H361.119ZM908.583 222.083C906.185 217.445 903.154 213.164 899.576 209.362L897.469 207.176L899.682 205.069C902.843 201.724 906.081 197.773 909.189 193.19L970.03 102.797H896.179L850.481 173.515C847.9 177.308 842.686 179.204 834.864 179.204H824.46V45.5117C824.46 18.7784 807.788 15.1438 789.799 15.1438H758.982L759.061 330.702H824.485V236.042H830.623C838.077 236.042 843.133 236.911 845.477 240.968L881.56 309.078C891.648 327.568 901.682 330.702 920.593 330.702H970.715L933.368 268.965L908.61 222.083H908.583ZM1226.17 97.6087C1192.88 97.6087 1171.65 112.411 1159.74 124.921L1155.79 128.925L1154.37 123.473C1150.9 110.067 1139.1 102.718 1121.37 102.718H1092.06L1092.24 330.623H1157.22V225.586C1157.22 215.314 1158.53 206.412 1161.27 198.273C1168.49 173.647 1188.66 158.345 1213.87 158.345C1234.15 158.345 1242.08 169.064 1242.08 196.719V295.988C1242.08 319.587 1253.01 330.623 1276.63 330.623H1307.55L1307.45 185.657C1307.45 128.082 1279.35 97.635 1226.17 97.635V97.6087ZM1020.44 102.797H989.652L989.863 279.026V330.702H1022.71L1023.87 330.754L1039.2 330.702H1054.42V330.623H1054.52L1054.66 137.432C1054.66 114.123 1043.52 102.824 1020.47 102.824L1020.44 102.797ZM616.309 279C583.754 279 561.078 253.136 561.078 216.157C561.078 179.204 583.755 153.367 616.336 153.367C648.995 153.367 671.962 179.204 671.962 216.157C671.962 253.715 649.575 279 616.336 279H616.309ZM616.309 98.1355C547.355 98.1355 497.312 147.783 497.312 216.157C497.312 284.557 547.356 334.178 616.336 334.178C685.421 334.178 735.726 284.557 735.726 216.183C735.726 147.783 685.421 98.1355 616.336 98.1355" fill="#FFF"/>
+                    <path d="M119.174 276.393L66.2869 276.34V213.129C66.2869 199.591 71.5282 192.585 83.0907 190.952H119.174C144.906 190.952 161.552 207.176 161.578 233.435C161.552 260.406 145.328 276.367 119.174 276.367V276.393ZM66.2869 105.827V89.1812C66.2869 74.6161 72.4503 67.6892 85.9618 66.7937H113.038C136.242 66.7937 150.148 80.6739 150.148 103.931C150.148 121.63 140.613 142.305 113.88 142.305H66.2869V105.827V105.827ZM186.706 168.933L177.144 163.56L185.494 156.423C195.212 148.073 211.464 129.294 211.464 96.8982C211.464 47.2771 173.01 15.2498 113.459 15.2498H37.7624C29.2449 15.5603 21.174 19.136 15.2212 25.2359C9.26849 31.3357 5.89066 39.492 5.78809 48.0145V329.57H114.801C180.989 329.57 223.71 293.539 223.71 237.729C223.71 207.677 209.91 181.997 186.706 168.933" fill="#FFF"/>
+                    <path d="M1444.43 268.966C1408.9 268.966 1396.26 237.992 1396.26 208.941C1396.26 196.141 1399.5 154.447 1441.04 154.447C1461.66 154.447 1489.13 160.347 1489.13 211.074C1489.13 258.931 1464.82 268.966 1444.43 268.966V268.966ZM1522.87 102.192C1510.54 102.192 1501.06 107.117 1496.29 116.099L1494.5 119.575L1491.5 116.942C1481.02 107.881 1462.21 97.1089 1431.69 97.1089C1370.92 97.1089 1330.02 142.753 1330.02 210.627C1330.02 278.474 1372.35 325.883 1432.9 325.883C1453.57 325.883 1469.93 321.036 1482.89 311.239L1487.89 307.472V313.793C1487.89 344.24 1468.22 361.044 1432.53 361.044C1415.17 361.044 1399.4 356.83 1388.81 352.985C1375.06 348.823 1366.95 352.273 1361.39 366.101L1356.23 378.849L1348.93 397.496L1353.44 399.893C1376.3 412.009 1406.03 419.252 1432.9 419.252C1488.21 419.252 1552.84 390.938 1552.84 311.239L1553.08 102.192H1522.87" fill="#FFF"/>
+                    </svg>
+            </div>
+
+            <div class="connextions">
+
+                <div class="button_type01">EUR</div>
+                <div class="button_type01">
+                    <img src="https://i.ebayimg.com/images/g/fwEAAOSwe~lcTJuI/s-l300.jpg" alt="drapeau de la France">
+                </div>
+                <div class="button_type01">
+                    <i class="far fa-question-circle"></i>
+                </div>
+
+                <div class="button_type02">Ajoutez votre établissement</div>
+                <div class="button_type03">S'inscrire</div>
+                <div class="button_type03">Se connecter</div>
+            </div>
+
+        </div>
+
+        <nav>
+            <li>
+                <ul>
+                    <i class="fas fa-home"></i>
+                    Hébergements
+                </ul>
+                <ul>
+                    <i class="fas fa-plane"></i>
+                    Vols
+                </ul>
+                <ul>
+                    <i class="fas fa-globe-europe"></i>
+                    Vol + hôtel
+                </ul>
+                <ul>
+                    <i class="fas fa-car"></i>
+                    Voitures de location
+                </ul>
+                <ul>
+                    <i class="fas fa-chess-rook"></i>
+                    Attractions
+                </ul>
+                <ul>
+                    <i><img src="https://seekicon.com/free-icon-download/taxi_6.svg" alt=""></i>
+                    Taxis aéroport
+                </ul>
+            </li>
+        </nav>
+    </header>
+
+
+    <div class="bannier_type01">
+        <section>
+            <h1>Trouvez des offres sur des hôtels, des hébergements indépendants et bien plus encore...</h1>
+            <div class="subtitle_h1">Du gîte champêtre cosy à l'appartement citadin design</div>
+    
+            <div class="recherche_zone">
+                <input type="search" placeholder="Où allez-vous ?">
+                <input type="text" placeholder="Quand ?">
+                <input type="number" placeholder="Combien serez-vous ?">
+                <button>Rechercher</button>
+            </div>
+    
+            <div class="bannier_checkbox">
+                <input type="checkbox" name="" id="">
+                <p>Je voyage pour le travail</p>
+            </div>
+        </section>
+    </div>
+
+    <main>
+
+        <div class="bloc_01">
+
+            <div class="bloc_01_icon">
+                <i class="fas fa-info-circle"></i>
+            </div>
+
+            <div class="bloc_01_text">
+                <p>Obtenez les conseils dont vous avez besoin. Consultez les dernières restrictions relatives au COVID-19 avant de voyager.</p>
+                <a href="">En savoir plus</a>
+            </div>
+        
+        </div>
+
+        <div class="bloc_02">
+            <div class="bloc_02_card">
+                <div class="bloc_02_icon">
+                    <i class="fas fa-plane"></i>
+                </div>
+                <div>
+                    <h2>Réservez un vol</h2>
+                    <p>Comparez des milliers de vols, sans frais cachés.</p>
+                </div>
+            </div>
+
+            <div class="bloc_02_card">
+                <div class="bloc_02_icon">
+                    <i class="fas fa-car"></i>
+                </div>
+                <div>
+                    <h2>Louez une voiture</h2>
+                    <p>Profitez d'une sélection de centaines de voitures et d'un Service Clients disponible 24h/24 et 7j/7.</p>
+                </div>
+            </div>
+
+            <div class="bloc_02_card">
+                <div class="bloc_02_icon">
+                    <i><img src="https://seekicon.com/free-icon-download/taxi_6.svg" height="19.2px" alt=""></i>
+                </div>
+                <div>
+                    <h2>Réservez un taxi aéroport</h2>
+                    <p>Le chauffeur vous attendra à l'aéroport et vous conduira à votre hébergement.</p>
+                </div>
+            </div>
+
+            <div class="bloc_02_card">
+                <div class="bloc_02_icon">
+                    <i class="fas fa-chess-rook"></i>
+                </div>
+                <div>
+                    <h2>Trouvez des activités</h2>
+                    <p>Bénéficiez d'une confirmation instantanée, de billets numériques et de commentaires clients authentiques.</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="bloc_03">
+            <h3>Rechercher par type d'hébergement</h3>
+
+            <div class="silde_left none">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+
+            <div class="silde_right">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+
+            <div class="bloc_03_sildebox">
+
+
+                <div class="silde_elements">
+
+                    <div class="card_silde">
+                        <img src="./images/type/hotels.jpg" alt="hotels">
+                        <div>
+                            <div class="card_silde_title">Hôtels</div>
+                            <p>802 409 hôtels</p>
+                        </div>
+                    </div>
+
+                    <div class="card_silde">
+                        <img src="./images/type/appartements.jpg" alt="appartements">
+                        <div>
+                            <div class="card_silde_title">Appartements</div>
+                            <p>805 700 appartements</p>
+                        </div>
+                    </div>
+
+                    <div class="card_silde">
+                        <img src="./images/type/villa.jpg" alt="villas">
+                        <div>
+                            <div class="card_silde_title">Villas</div>
+                            <p>406 020 villas</p>
+                        </div>
+                    </div>
+
+                    <div class="card_silde">
+                        <img src="./images/type/chalet.jpg" alt="chalets">
+                        <div>
+                            <div class="card_silde_title">Chalets</div>
+                            <p>31 756 chalets</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card_silde">
+                        <img src="./images/type/complexeh.jpg" alt="complexes hôteliers">
+                        <div>
+                            <div class="card_silde_title">Complexes hôteliers</div>
+                            <p>17 466 complexes hôteliers</p>
+                        </div>
+                    </div>
+
+                    <div class="card_silde">
+                        <img src="./images/type/camping.jpg" alt="camping">
+                        <div>
+                            <div class="card_silde_title">Campings</div>
+                            <p>10 984 campings</p>
+                        </div>
+                    </div>
+
+                    <div class="card_silde">
+                        <img src="./images/type/luxe.jpg" alt="maison de luxe">
+                        <div>
+                            <div class="card_silde_title">Maisons de luxes</div>
+                            <p>2 220 maisons de luxes</p>
+                        </div>
+                    </div>
+
+                    <div class="card_silde">
+                        <img src="./images/type/tinyhouse.jpg" alt="tiny house">
+                        <div>
+                            <div class="card_silde_title">Tiny houses</div>
+                            <p>356 tiny houses</p>
+                        </div>
+                    </div>
+
+                    <div class="card_silde">
+                        <img src="./images/type/riad.jpg" alt="riads">
+                        <div>
+                            <div class="card_silde_title">Riads</div>
+                            <p>1 041 riads</p>
+                        </div>
+                    </div>
+
+                    <div class="card_silde">
+                        <img src="./images/type/apparthotel.jpg" alt="appartements hôtels">
+                        <div>
+                            <div class="card_silde_title">Appart'hôtels</div>
+                            <p>33 383 appart'hôtels</p>
+                        </div>
+                    </div>
+
+                    <div class="card_silde">
+                        <img src="./images/type/maisonvac.jpg" alt="maison de vacences">
+                        <div>
+                            <div class="card_silde_title">Maisons vacances</div>
+                            <p>12 631 maisons de vacances</p>
+                        </div>
+                    </div>
+
+                    <div class="card_silde">
+                        <img src="./images/type/motel.jpg" alt="motels">
+                        <div>
+                            <div class="card_silde_title">Motel</div>
+                            <p>11 315 motels</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="grid_01">
+
+            <div class="bloc_img1 bloc_img">
+                <h4>Bayonne 
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/langfr-225px-Flag_of_France.svg.png" alt="france" height="16px">
+                </h4>
+                <img src="./images/grid01/bayonne.jpg" alt="Bayonne">
+            </div>
+
+            <div class="bloc_img2 bloc_img">
+                <h4>Bordeaux 
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/langfr-225px-Flag_of_France.svg.png" alt="france" height="16px">
+                </h4>
+                <img src="./images/grid01/bordeaux.jpg" alt="Bordeaux">
+            </div>
+
+            <div class="bloc_img3 bloc_img">
+                <h4>La Rochelle 
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/langfr-225px-Flag_of_France.svg.png" alt="france" height="16px">
+                </h4>
+                <img src="./images/grid01/larochelle.jpg" alt="La Rochelle">
+            </div>
+
+            <div class="bloc_img4 bloc_img">
+                <h4>Paris 
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/langfr-225px-Flag_of_France.svg.png" alt="france" height="16px">
+                </h4>
+                <img src="./images/grid01/paris.jpg" alt="Paris">
+            </div>
+
+            <div class="bloc_img5 bloc_img">
+                <h4>Beynac et Cazenac
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/langfr-225px-Flag_of_France.svg.png" alt="france" height="16px">
+                </h4>
+                <img src="./images/grid01/beynac.jpg" alt="Beynac et Cazenac">
+            </div>
+
+        </div>
+
+        <section class="bloc_04">
+            <h5>Explorez l'Europe</h5>
+            <p class="subtitle_h5">Ces destinations prisées ont beaucoup à offrir</p>
+
+            <div class="silde_left_2 none">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+
+            <div class="silde_right_2">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+
+            <div class="bloc_04_sildebox">
+
+                <div class="silde4_elements">
+
+                    <div class="card_silde">
+                        <img src="./images/explore/amsterdam.jpg" alt="amsterdam">
+                        <div>
+                            <div class="card_silde_title">Amsterdam</div>
+                            <p>3 761 établissements</p>
+                        </div>
+                    </div>
+
+                    <div class="card_silde">
+                        <img src="./images/explore/bruxelles.jpg" alt="bruxelles">
+                        <div>
+                            <div class="card_silde_title">Bruxelles</div>
+                            <p>595 établissements</p>
+                        </div>
+                    </div>
+
+                    <div class="card_silde">
+                        <img src="./images/explore/budapest.jpg" alt="budapest">
+                        <div>
+                            <div class="card_silde_title">Budapest</div>
+                            <p>1 403 établissements</p>
+                        </div>
+                    </div>
+
+                    <div class="card_silde">
+                        <img src="./images/explore/edimbourg.jpg" alt="edimbourg">
+                        <div>
+                            <div class="card_silde_title">Edimbourg</div>
+                            <p>736 établissements</p>
+                        </div>
+                    </div>
+
+                    <div class="card_silde">
+                        <img src="./images/explore/lisbonne.jpg" alt="lisbonne">
+                        <div>
+                            <div class="card_silde_title">Lisbonne</div>
+                            <p>1 164 établissements</p>
+                        </div>
+                    </div>
+
+                    <div class="card_silde">
+                        <img src="./images/explore/londres.jpg" alt="londres">
+                        <div>
+                            <div class="card_silde_title">Londres</div>
+                            <p>473 établissements</p>
+                        </div>
+                    </div>
+
+                    <div class="card_silde">
+                        <img src="./images/explore/porto.jpg" alt="porto">
+                        <div>
+                            <div class="card_silde_title">Porto</div>
+                            <p>636 établissements</p>
+                        </div>
+                    </div>
+
+                    <div class="card_silde">
+                        <img src="./images/explore/stockholm.jpg" alt="stockholm">
+                        <div>
+                            <div class="card_silde_title">Stockholm</div>
+                            <p>2 368 établissements</p>
+                        </div>
+                    </div>
+
+                    <div class="card_silde">
+                        <img src="./images/explore/venise.jpg" alt="venise">
+                        <div>
+                            <div class="card_silde_title">Venise</div>
+                            <p>157 établissements</p>
+                        </div>
+                    </div>
+
+                    <div class="card_silde">
+                        <img src="./images/explore/vienne.jpg" alt="vienne">
+                        <div>
+                            <div class="card_silde_title">Vienne</div>
+                            <p>589 établissements</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="bloc_05">
+            <h5>Explorez l'Europe</h5>
+            <p class="subtitle_h5">Ces destinations prisées ont beaucoup à offrir</p>
+
+            <div class="silde_left_3">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+
+            <div class="silde_right_3">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+
+            <div class="bloc_05_sildebox">
+
+                <div class="silde5_elements">
+
+                    <div class="card_silde_2">
+                        <img src="./images/escape/athène.jpg" alt="athène">
+                        <div>
+                            <div class="card_silde_title">Athène</div>
+                            <p>Grèce</p>
+                            <p>Dès <span>25 €</span></p>
+                        </div>
+                    </div>
+
+                    <div class="card_silde_2">
+                        <img src="./images/escape/bucarest.jpg" alt="bucarest">
+                        <div>
+                            <div class="card_silde_title">Bucarest</div>
+                            <p>Roumanie</p>
+                            <p>Dès <span>28 €</span></p>
+                        </div>
+                    </div>
+
+                    <div class="card_silde_2">
+                        <img src="./images/escape/luxembourg.jpg" alt="luxembourg">
+                        <div>
+                            <div class="card_silde_title">Luxembourg</div>
+                            <p>Luxembourg</p>
+                            <p>Dès <span>45 €</span></p>
+                        </div>
+                    </div>
+
+                    <div class="card_silde_2">
+                        <img src="./images/escape/madrid.jpeg" alt="madrid">
+                        <div>
+                            <div class="card_silde_title">Madrid</div>
+                            <p>Espagne</p>
+                            <p>Dès <span>32 €</span></p>
+                        </div>
+                    </div>
+
+                    <div class="card_silde_2">
+                        <img src="./images/escape/monaco.jpeg" alt="monaco">
+                        <div>
+                            <div class="card_silde_title">Monaco</div>
+                            <p>Monaco</p>
+                            <p>Dès <span>87 €</span></p>
+                        </div>
+                    </div>
+
+                    <div class="card_silde_2">
+                        <img src="./images/escape/sofia.jpg" alt="sofia">
+                        <div>
+                            <div class="card_silde_title">Sofia</div>
+                            <p>Bulgarie</p>
+                            <p>Dès <span>34 €</span></p>
+                        </div>
+                    </div>
+
+                    <div class="card_silde_2">
+                        <img src="./images/escape/varsovie.jpg" alt="varsovie">
+                        <div>
+                            <div class="card_silde_title">Varsovie</div>
+                            <p>Pologne</p>
+                            <p>Dès <span>26 €</span></p>
+                        </div>
+                    </div>
+
+                    <div class="card_silde_2">
+                        <img src="./images/escape/zagreb.jpeg" alt="zagreb">
+                        <div>
+                            <div class="card_silde_title">Zagreb</div>
+                            <p>Croatie</p>
+                            <p>Dès <span>45 €</span></p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="bloc_06">
+            <h6>Trouvez des idées pour votre prochain voyage</h6>
+
+            <div class="grid_02">
+
+                <div class="bloc_img21 bloc_img_2">
+                    <div>
+                        <h4>5 destinations inoubliables</h4>
+                        <p>Profité au maximum de ces lieux empreints de sérénité.</p>
+                    </div>
+                    
+                    <img src="./images/idea/beach.jpg" alt="plage">
+                </div>
+    
+                <div class="bloc_img22 bloc_img_2">
+                    <div>
+                        <h4>Des sites de plongés fabuleux</h4>
+                        <p>Des bancs de poissons aux coraux en passant par des épaves inexplorées.</p>
+                    </div>
+                    
+                    <img src="./images/idea/underwater.jpg" alt="sous l'eau">
+                </div>
+    
+                <div class="bloc_img23 bloc_img_2">
+                    <div>
+                        <h4>48 heures dans la peau d'un nightrunner</h4>
+                        <p>Découvrez des itinéraire à faire de nuit au dans les villes les plus animées.</p>
+                    </div>
+                    
+                    <img src="./images/idea/arch.jpg" alt="ville de nuit">
+                </div>
+    
+                <div class="bloc_img24 bloc_img_2">
+                    <div>
+                        <h4>8 idées pour un voyages solo mémorable</h4>
+                        <p>Prenez du temps pour vous : visitez une nouvelle ville ou évadez-vous, tout simplement.</p>
+                    </div>
+                    
+                    <img src="./images/idea/sunset.jpg" alt="ville couché de soleil">
+                </div>
+    
+                <div class="bloc_img25 bloc_img_2">
+                    <div>
+                        <h4>5 montagnes et fjords européens où pique-niquer</h4>
+                        <p>Les plus beaux spots pour se poser et profiter d'un bon repas de Norvège en Grèce.</p>
+                    </div>
+                    
+                    <img src="./images/idea/montagne.jpg" alt="montagne">
+                </div>
+    
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+
+
+    <footer>
+
+
+    </footer>
+</body>
+</html>
