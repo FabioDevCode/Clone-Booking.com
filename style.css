@@ -110,6 +110,19 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 10px;
+}
+
+.boutonInt {
+    font-family: Helvetica, sans-serif;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    border: 2px solid white;
 }
 
 .button_type01:hover {
@@ -152,8 +165,9 @@ header {
 .button_type03 {
     background-color: white;
     border: 1px solid #0896FF;
-    color: #0896FF;
+    color: #0b84e0;
     height: 36px;
+    padding: 0 16px;
 }
 
 .button_type03:hover {
@@ -195,6 +209,13 @@ nav li ul:nth-child(1) {
 
 ul i {
     font-size: 1.2em;
+    margin-right: 10px;
+}
+
+ul svg {
+    margin-top: 3px;
+    height: 1.3em;
+    filter: invert(1);
     margin-right: 10px;
 }
 
@@ -340,7 +361,7 @@ main {
     font-size: 20px;
     height: 40px;
     width: 40px;
-    color: #923E01;
+    color: #ad7750;
     background-color: #FFF0E0;
     border-radius: 8px;
     margin-right: 16px;
@@ -394,6 +415,11 @@ main {
 .bloc_02_icon {
     font-size: 16px;
     margin-right: 14px;
+}
+
+.bloc_02_icon svg {
+    height: 1.3em;
+    filter: invert(0);
 }
 
 .bloc_02_card h2 {
@@ -518,7 +544,7 @@ main {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, .9);
     font-family: 'Segoe UI Regular', Arial, sans-serif;
     font-weight: bold;
-    font-size: 1.78em;
+    font-size: 1.68em;
     display: flex;
     padding: 16px;
     position: absolute;
@@ -529,10 +555,11 @@ main {
 }
 
 .bloc_img h4 img {
-    margin-top: 6px;
+    border-radius: 3px;
+    margin-top: 7px;
     margin-left: 12px;
-    height: 24px;
-    width: 34px;
+    height: 20px;
+    width: 28px;
 }
 
 .bloc_img img {
@@ -711,12 +738,12 @@ main {
 }
 
 .silde_left_3 {
-    top: 40%;
+    top: 43%;
     left: 0px;
 }
 
 .silde_right_3 {
-    top: 40%;
+    top: 43%;
     right: 0px;
 }
 
