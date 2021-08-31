@@ -277,20 +277,25 @@ h1 {
     font-size: 16px;
     border-radius: 2px;
     outline: none;
+    border: 1px solid transparent;
+}
+
+.recherche_zone input:hover {
+    border: 1px solid grey;
 }
 
 input:nth-child(1) {
-    width: 38%;
+    width: 421px;
 }
 
 input:nth-child(2) {
     margin-left: 4px;
-    width: 18%;
+    width: 196px;
 }
 
 input:nth-child(3) {
     margin-left: 4px;
-    width: 28%;
+    width: 298px;
 }
 
 input::placeholder {
@@ -301,14 +306,14 @@ input::placeholder {
 .recherche_zone button {
     cursor: pointer;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 28px;
     font-weight: 600;
     letter-spacing: .05em;
     border-radius: 2px;
     background-color: #0874c7;
     margin-left: 4px;
-    width: 16%;
+    width: 164px;
 }
 
 .recherche_zone button:hover {
@@ -847,19 +852,207 @@ main {
     grid-column: 4 / 7;
 }
 
+/*-------------------------------------------*/
 
+.bloc_07 {
+    width: 1140px;
+    padding: 0 16px;
+    margin-top: 32px;
+    position: relative;
+}
+.silde7_elements {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    position: relative;
+    width: 2234px;
+    height: auto;
+    left: 0px;
+}
 
+.bloc_07_sildebox {
+    position: relative;
+    overflow: hidden;
+}
 
+.bloc_07 h5 {
+    font-family: 'Segoe UI Bold', Arial, sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
 
+.silde_left_4, .silde_right_4 {
+    z-index: 100;
+    cursor: pointer;
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
 
+.silde_left_4 {
+    top: 43%;
+    left: 0px;
+}
 
+.silde_right_4 {
+    top: 43%;
+    right: 0px;
+}
 
+.card_silde_7 {
+    height: 379px;
+}
 
+.card_silde_7 div p {
+    margin-bottom: 6px;
+}
 
+.card_silde_7 p.price7 {
+    color: black;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
 
+.card7_note {
+    height: max-content;
+    display: flex;
+    align-items: center;
+}
 
+.card7_note div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    font-size: .85em;
+    height: 28px;
+    width: 28px;
+    border-radius: 5px 5px 5px 0px;
+    background-color: rgb(0, 53, 128);
+}
 
+.card7_note p {
+    font-size: .8em;
+}
 
+.easter_egg {
+    position: relative;
+    height: 379px;
+    
+}
+
+.easter_egg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.easter_egg_text {
+    font-size: 16px;
+    line-height: 24px;
+    cursor: initial;
+    padding: 16px;
+    color: white;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .65);
+}
+
+.easter_egg_text:hover {
+    background-color: rgba(0, 0, 0, .45);
+}
+
+.easter_egg_text div {
+    margin-top: 125px;
+}
+
+.easter_egg_text button {
+    cursor: pointer;
+    color: #0896FF;
+    background-color: white;
+    border: 1px solid #0896FF;
+    border-radius: 3px;
+    font-size: 1.05em;
+    font-weight: 600;
+    line-height: 1.05em;
+    height: 56px;
+    width: 100%;
+}
+
+.easter_egg_text button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: #0896FF;
+}
+
+.easter_egg_text button:hover {
+    background-color: rgba(255, 255, 255, .85);
+}
+
+/*--------------------------------------------*/
+
+.bloc_08 {
+    width: 1140px;
+    padding: 0 16px;
+    margin-top: 40px;
+    position: relative;
+}
+.silde8_elements {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    position: relative;
+    width: 2234px;
+    height: auto;
+    left: 0px;
+}
+
+.bloc_08_sildebox {
+    position: relative;
+    overflow: hidden;
+}
+
+.card_silde_8 {
+    margin-right: 18px;
+}
+
+.bloc_08 h5 {
+    font-family: 'Segoe UI Bold', Arial, sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.card_silde_8 img {
+    background-color: rgb(247, 247, 247);
+}
+
+.card_silde_8 img:nth-child(3) {
+    height: 100%
+}
+
+.card_silde_8 p {
+    line-height: 20px;
+}
 
 
 

@@ -661,6 +661,260 @@ function silderNum3() {
 
 }
 
+silderNum4()
+
+function silderNum4() {
+
+    const sildeBox3 = document.querySelector(".bloc_07_sildebox");
+    const buttonLeft3 = document.querySelector(".silde_left_4");
+    const buttonRight3 = document.querySelector(".silde_right_4");
+    let count3 = 0
+
+    buttonRight3.addEventListener('click', ()=> {
+
+        if(count3 < 4) {
+            buttonRight3.classList.remove('none');
+            buttonLeft3.classList.remove('none');
+            count3++
+            if (count3 == 4) {
+                buttonRight3.classList.add('none');
+            }
+            
+        } else {
+            buttonRight3.classList.remove('none');
+            count3 = count3
+        }
+
+        sildeBox3.innerHTML = `
+        <div class="silde7_elements" style="left: ${"-" + (count3 * 281.5)}px">
+
+        <div class="card_silde_2 card_silde_7">
+            <img src="./images/note/in01.jpg" alt="chambre">
+            <div class="card_silde7_text">
+                <p>Villa Rokk</p>
+                <p>Barcelone</p>
+                <p class="price7">Dès 2 449 €</p>
+            </div>
+            <div class="card7_note">
+                <div>9,5</div>
+                <p><span>Exceptionnel </span>. 17 expériences vécues</p>
+            </div>
+        </div>
+
+        <div class="card_silde_2 card_silde_7">
+            <img src="./images/note/in02.jpg" alt="chambre">
+            <div class="card_silde7_text">
+                <p>Villa Domina</p>
+                <p>Noyer</p>
+                <p class="price7">Dès 79 €</p>
+            </div>
+            <div class="card7_note">
+                <div>9,5</div>
+                <p><span>Exceptionnel </span>. 967 expériences vécues</p>
+            </div>
+        </div>
+
+        <div class="card_silde_2 card_silde_7">
+            <img src="./images/note/in03.jpg" alt="chambre">
+            <div class="card_silde7_text">
+                <p>Appartamento Benincampi</p>
+                <p>Rome</p>
+                <p class="price7">Dès 206 €</p>
+            </div>
+            <div class="card7_note">
+                <div>9,7</div>
+                <p><span>Exceptionnel </span>. 77 expériences vécues</p>
+            </div>
+        </div>
+
+        <div class="card_silde_2 card_silde_7">
+            <img src="./images/note/in04.jpg" alt="chambre">
+            <div class="card_silde7_text">
+                <p>Casa Portuguesa Prata</p>
+                <p>Lisbonne</p>
+                <p class="price7">Dès 349 €</p>
+            </div>
+            <div class="card7_note">
+                <div>8,7</div>
+                <p><span>Exceptionnel </span>. 85 expériences vécues</p>
+            </div>
+        </div>
+
+        <div class="card_silde_2 card_silde_7">
+            <img src="./images/note/in05.jpg" alt="chambre">
+            <div class="card_silde7_text">
+                <p>Urbana Hipster Downtown</p>
+                <p>Budapest</p>
+                <p class="price7">Dès 2 449 €</p>
+            </div>
+            <div class="card7_note">
+                <div>9,2</div>
+                <p><span>Exceptionnel </span>. 53 expériences vécues</p>
+            </div>
+        </div>
+
+        <div class="card_silde_2 card_silde_7">
+            <img src="./images/note/in06.jpg" alt="chambre">
+            <div class="card_silde7_text">
+                <p>Villa Pollo</p>
+                <p>Madrid</p>
+                <p class="price7">Dès 2 449 €</p>
+            </div>
+            <div class="card7_note">
+                <div>7,5</div>
+                <p><span>Exceptionnel </span>. 38 expériences vécues</p>
+            </div>
+        </div>
+
+        <div class="card_silde_2 card_silde_7">
+            <img src="./images/note/in07.jpg" alt="chambre">
+            <div class="card_silde7_text">
+                <p>Atypiskt Hus</p>
+                <p>Stockholm</p>
+                <p class="price7">Dès 1 249 €</p>
+            </div>
+            <div class="card7_note">
+                <div>10</div>
+                <p><span>Exceptionnel </span>. 1 expérience vécue</p>
+            </div>
+        </div>
+
+        <div class="card_silde_2 easter_egg">
+        <img src="./images/note/moi.jpg" alt="un super développeur web">
+        <div class="easter_egg_text">
+            <div>Besoin d'un développeur web, front-end ?<br> Ne cherchez plus celui qui a créé ce site "clone" fait l'affaire.</div>
+
+            <button id="easteregg"><a href="https://github.com/FabioDevCode" target="_blank">Découvrir son Github</a></button>
+        </div>
+
+    </div>
+
+    </div>`;
+    });
+
+    buttonLeft3.addEventListener('click', ()=> {
+
+        if(count3 > 0) {
+            buttonLeft3.classList.remove('none');
+            buttonRight3.classList.remove('none');
+            count3--
+            if (count3 == 0) {
+                buttonLeft3.classList.add('none');
+            } 
+        } else {
+            buttonLeft3.classList.remove('none');
+            count3 = count3
+        }
+            
+        sildeBox3.innerHTML = `
+        <div class="silde7_elements" style="left: ${"-" + (count3 * 281.5)}px">
+
+        <div class="card_silde_2 card_silde_7">
+            <img src="./images/note/in01.jpg" alt="chambre">
+            <div class="card_silde7_text">
+                <p>Villa Rokk</p>
+                <p>Barcelone</p>
+                <p class="price7">Dès 2 449 €</p>
+            </div>
+            <div class="card7_note">
+                <div>9,5</div>
+                <p><span>Exceptionnel </span>. 17 expériences vécues</p>
+            </div>
+        </div>
+
+        <div class="card_silde_2 card_silde_7">
+            <img src="./images/note/in02.jpg" alt="chambre">
+            <div class="card_silde7_text">
+                <p>Villa Domina</p>
+                <p>Noyer</p>
+                <p class="price7">Dès 79 €</p>
+            </div>
+            <div class="card7_note">
+                <div>9,5</div>
+                <p><span>Exceptionnel </span>. 967 expériences vécues</p>
+            </div>
+        </div>
+
+        <div class="card_silde_2 card_silde_7">
+            <img src="./images/note/in03.jpg" alt="chambre">
+            <div class="card_silde7_text">
+                <p>Appartamento Benincampi</p>
+                <p>Rome</p>
+                <p class="price7">Dès 206 €</p>
+            </div>
+            <div class="card7_note">
+                <div>9,7</div>
+                <p><span>Exceptionnel </span>. 77 expériences vécues</p>
+            </div>
+        </div>
+
+        <div class="card_silde_2 card_silde_7">
+            <img src="./images/note/in04.jpg" alt="chambre">
+            <div class="card_silde7_text">
+                <p>Casa Portuguesa Prata</p>
+                <p>Lisbonne</p>
+                <p class="price7">Dès 349 €</p>
+            </div>
+            <div class="card7_note">
+                <div>8,7</div>
+                <p><span>Exceptionnel </span>. 85 expériences vécues</p>
+            </div>
+        </div>
+
+        <div class="card_silde_2 card_silde_7">
+            <img src="./images/note/in05.jpg" alt="chambre">
+            <div class="card_silde7_text">
+                <p>Urbana Hipster Downtown</p>
+                <p>Budapest</p>
+                <p class="price7">Dès 2 449 €</p>
+            </div>
+            <div class="card7_note">
+                <div>9,2</div>
+                <p><span>Exceptionnel </span>. 53 expériences vécues</p>
+            </div>
+        </div>
+
+        <div class="card_silde_2 card_silde_7">
+            <img src="./images/note/in06.jpg" alt="chambre">
+            <div class="card_silde7_text">
+                <p>Villa Pollo</p>
+                <p>Madrid</p>
+                <p class="price7">Dès 2 449 €</p>
+            </div>
+            <div class="card7_note">
+                <div>7,5</div>
+                <p><span>Exceptionnel </span>. 38 expériences vécues</p>
+            </div>
+        </div>
+
+        <div class="card_silde_2 card_silde_7">
+            <img src="./images/note/in07.jpg" alt="chambre">
+            <div class="card_silde7_text">
+                <p>Atypiskt Hus</p>
+                <p>Stockholm</p>
+                <p class="price7">Dès 1 249 €</p>
+            </div>
+            <div class="card7_note">
+                <div>10</div>
+                <p><span>Exceptionnel </span>. 1 expérience vécue</p>
+            </div>
+        </div>
+
+        <div class="card_silde_2 easter_egg">
+        <img src="./images/note/moi.jpg" alt="un super développeur web">
+        <div class="easter_egg_text">
+            <div>Besoin d'un développeur web, front-end ?<br> Ne cherchez plus celui qui a créé ce site "clone" fait l'affaire.</div>
+
+            <button id="easteregg"><a href="https://github.com/FabioDevCode" target="_blank">Découvrir son Github</a></button>
+        </div>
+
+    </div>
+
+    </div>`;
+
+    });
+
+}
 //-----------------------------------------------------
 
 
