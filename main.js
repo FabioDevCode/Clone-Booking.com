@@ -3,7 +3,7 @@ silderNum1()
 
 function silderNum1() {
 
-    const sildeBox = document.querySelector(".bloc_03_sildebox");
+    const sildeBox = document.querySelector(".silde_elements");
     const buttonLeft = document.querySelector(".silde_left");
     const buttonRight = document.querySelector(".silde_right");
     let count = 0
@@ -22,109 +22,7 @@ function silderNum1() {
             buttonRight.classList.remove('none');
             count = count
         }
-
-        sildeBox.innerHTML = `
-        <div class="silde_elements" style="left: ${"-" + (count * 225)}px">
-
-                        <div class="card_silde">
-                            <img src="./images/type/hotels.jpg" alt="hotels">
-                            <div>
-                                <div class="card_silde_title">Hôtels</div>
-                                <p>802 409 hôtels</p>
-                            </div>
-                        </div>
-
-                        <div class="card_silde">
-                            <img src="./images/type/appartements.jpg" alt="appartements">
-                            <div>
-                                <div class="card_silde_title">Appartements</div>
-                                <p>805 700 appartements</p>
-                            </div>
-                        </div>
-
-                        <div class="card_silde">
-                            <img src="./images/type/villa.jpg" alt="villas">
-                            <div>
-                                <div class="card_silde_title">Villas</div>
-                                <p>406 020 villas</p>
-                            </div>
-                        </div>
-
-                        <div class="card_silde">
-                            <img src="./images/type/chalet.jpg" alt="chalets">
-                            <div>
-                                <div class="card_silde_title">Villas</div>
-                                <p>31 756 chalets</p>
-                            </div>
-                        </div>
-                        
-                        <div class="card_silde">
-                            <img src="./images/type/complexeh.jpg" alt="complexes hôteliers">
-                            <div>
-                                <div class="card_silde_title">Complexes hôteliers</div>
-                                <p>17 466 complexes hôteliers</p>
-                            </div>
-                        </div>
-
-                        <div class="card_silde">
-                            <img src="./images/type/camping.jpg" alt="camping">
-                            <div>
-                                <div class="card_silde_title">Campings</div>
-                                <p>10 984 campings</p>
-                            </div>
-                        </div>
-
-                        <div class="card_silde">
-                            <img src="./images/type/luxe.jpg" alt="maison de luxe">
-                            <div>
-                                <div class="card_silde_title">Maisons de luxes</div>
-                                <p>2 220 maisons de luxes</p>
-                            </div>
-                        </div>
-
-                        <div class="card_silde">
-                            <img src="./images/type/tinyhouse.jpg" alt="tiny house">
-                            <div>
-                                <div class="card_silde_title">Tiny houses</div>
-                                <p>356 tiny houses</p>
-                            </div>
-                        </div>
-
-                        <div class="card_silde">
-                            <img src="./images/type/riad.jpg" alt="riads">
-                            <div>
-                                <div class="card_silde_title">Riads</div>
-                                <p>1 041 riads</p>
-                            </div>
-                        </div>
-
-                        <div class="card_silde">
-                            <img src="./images/type/apparthotel.jpg" alt="appartements hôtels">
-                            <div>
-                                <div class="card_silde_title">Appart'hôtels</div>
-                                <p>33 383 appart'hôtels</p>
-                            </div>
-                        </div>
-
-                        <div class="card_silde">
-                            <img src="./images/type/maisonvac.jpg" alt="maison de vacences">
-                            <div>
-                                <div class="card_silde_title">Maisons vacances</div>
-                                <p>12 631 maisons de vacances</p>
-                            </div>
-                        </div>
-
-                        <div class="card_silde">
-                            <img src="./images/type/motel.jpg" alt="motels">
-                            <div>
-                                <div class="card_silde_title">Motel</div>
-                                <p>11 315 motels</p>
-                            </div>
-                        </div>
-
-                    </div>
-        
-        `;
+        sildeBox.style.left = `${"-" + (count * 225)}px`;
 
     });
 
@@ -141,109 +39,8 @@ function silderNum1() {
             buttonLeft.classList.remove('none');
             count = count
         }
+        sildeBox.style.left = `${"-" + (count * 225)}px`;
 
-        sildeBox.innerHTML = `
-        <div class="silde_elements" style="left: ${"-" + (count * 225)}px">
-
-                        <div class="card_silde">
-                            <img src="./images/type/hotels.jpg" alt="hotels">
-                            <div>
-                                <div class="card_silde_title">Hôtels</div>
-                                <p>802 409 hôtels</p>
-                            </div>
-                        </div>
-
-                        <div class="card_silde">
-                            <img src="./images/type/appartements.jpg" alt="appartements">
-                            <div>
-                                <div class="card_silde_title">Appartements</div>
-                                <p>805 700 appartements</p>
-                            </div>
-                        </div>
-
-                        <div class="card_silde">
-                            <img src="./images/type/villa.jpg" alt="villas">
-                            <div>
-                                <div class="card_silde_title">Villas</div>
-                                <p>406 020 villas</p>
-                            </div>
-                        </div>
-
-                        <div class="card_silde">
-                            <img src="./images/type/chalet.jpg" alt="chalets">
-                            <div>
-                                <div class="card_silde_title">Villas</div>
-                                <p>31 756 chalets</p>
-                            </div>
-                        </div>
-                        
-                        <div class="card_silde">
-                            <img src="./images/type/complexeh.jpg" alt="complexes hôteliers">
-                            <div>
-                                <div class="card_silde_title">Complexes hôteliers</div>
-                                <p>17 466 complexes hôteliers</p>
-                            </div>
-                        </div>
-
-                        <div class="card_silde">
-                            <img src="./images/type/camping.jpg" alt="camping">
-                            <div>
-                                <div class="card_silde_title">Campings</div>
-                                <p>10 984 campings</p>
-                            </div>
-                        </div>
-
-                        <div class="card_silde">
-                            <img src="./images/type/luxe.jpg" alt="maison de luxe">
-                            <div>
-                                <div class="card_silde_title">Maisons de luxes</div>
-                                <p>2 220 maisons de luxes</p>
-                            </div>
-                        </div>
-
-                        <div class="card_silde">
-                            <img src="./images/type/tinyhouse.jpg" alt="tiny house">
-                            <div>
-                                <div class="card_silde_title">Tiny houses</div>
-                                <p>356 tiny houses</p>
-                            </div>
-                        </div>
-
-                        <div class="card_silde">
-                            <img src="./images/type/riad.jpg" alt="riads">
-                            <div>
-                                <div class="card_silde_title">Riads</div>
-                                <p>1 041 riads</p>
-                            </div>
-                        </div>
-
-                        <div class="card_silde">
-                            <img src="./images/type/apparthotel.jpg" alt="appartements hôtels">
-                            <div>
-                                <div class="card_silde_title">Appart'hôtels</div>
-                                <p>33 383 appart'hôtels</p>
-                            </div>
-                        </div>
-
-                        <div class="card_silde">
-                            <img src="./images/type/maisonvac.jpg" alt="maison de vacences">
-                            <div>
-                                <div class="card_silde_title">Maisons vacances</div>
-                                <p>12 631 maisons de vacances</p>
-                            </div>
-                        </div>
-
-                        <div class="card_silde">
-                            <img src="./images/type/motel.jpg" alt="motels">
-                            <div>
-                                <div class="card_silde_title">Motel</div>
-                                <p>11 315 motels</p>
-                            </div>
-                        </div>
-
-                    </div>
-        
-        `;
     });
 
 }
@@ -252,7 +49,7 @@ silderNum2()
 
 function silderNum2() {
 
-    const sildeBox2 = document.querySelector(".bloc_04_sildebox");
+    const sildeBox2 = document.querySelector(".silde4_elements");
     const buttonLeft2 = document.querySelector(".silde_left_2");
     const buttonRight2 = document.querySelector(".silde_right_2");
     let count2 = 0
@@ -272,90 +69,8 @@ function silderNum2() {
             count2 = count2
         }
 
-        sildeBox2.innerHTML = `
-        <div class="silde4_elements" style="left: ${"-" + (count2 * 225)}px">
+        sildeBox2.style.left = `${"-" + (count2 * 225)}px`;
 
-                    <div class="card_silde">
-                        <img src="./images/explore/amsterdam.jpg" alt="amsterdam">
-                        <div>
-                            <div class="card_silde_title">Amsterdam</div>
-                            <p>3 761 établissements</p>
-                        </div>
-                    </div>
-
-                    <div class="card_silde">
-                        <img src="./images/explore/bruxelles.jpg" alt="bruxelles">
-                        <div>
-                            <div class="card_silde_title">Bruxelles</div>
-                            <p>595 établissements</p>
-                        </div>
-                    </div>
-
-                    <div class="card_silde">
-                        <img src="./images/explore/budapest.jpg" alt="budapest">
-                        <div>
-                            <div class="card_silde_title">Budapest</div>
-                            <p>1 403 établissements</p>
-                        </div>
-                    </div>
-
-                    <div class="card_silde">
-                        <img src="./images/explore/edimbourg.jpg" alt="edimbourg">
-                        <div>
-                            <div class="card_silde_title">Edimbourg</div>
-                            <p>736 établissements</p>
-                        </div>
-                    </div>
-
-                    <div class="card_silde">
-                        <img src="./images/explore/lisbonne.jpg" alt="lisbonne">
-                        <div>
-                            <div class="card_silde_title">Lisbonne</div>
-                            <p>1 164 établissements</p>
-                        </div>
-                    </div>
-
-                    <div class="card_silde">
-                        <img src="./images/explore/londres.jpg" alt="londres">
-                        <div>
-                            <div class="card_silde_title">Londres</div>
-                            <p>473 établissements</p>
-                        </div>
-                    </div>
-
-                    <div class="card_silde">
-                        <img src="./images/explore/porto.jpg" alt="porto">
-                        <div>
-                            <div class="card_silde_title">Porto</div>
-                            <p>636 établissements</p>
-                        </div>
-                    </div>
-
-                    <div class="card_silde">
-                        <img src="./images/explore/stockholm.jpg" alt="stockholm">
-                        <div>
-                            <div class="card_silde_title">Stockholm</div>
-                            <p>2 368 établissements</p>
-                        </div>
-                    </div>
-
-                    <div class="card_silde">
-                        <img src="./images/explore/venise.jpg" alt="venise">
-                        <div>
-                            <div class="card_silde_title">Venise</div>
-                            <p>157 établissements</p>
-                        </div>
-                    </div>
-
-                    <div class="card_silde">
-                        <img src="./images/explore/vienne.jpg" alt="vienne">
-                        <div>
-                            <div class="card_silde_title">Vienne</div>
-                            <p>589 établissements</p>
-                        </div>
-                    </div>
-
-            </div>`;
     });
 
     buttonLeft2.addEventListener('click', ()=> {
@@ -371,91 +86,8 @@ function silderNum2() {
             buttonLeft2.classList.remove('none');
             count2 = count2
         }
-            
-        sildeBox2.innerHTML = `
-        <div class="silde4_elements" style="left: ${"-" + (count2 * 225)}px">
-
-                    <div class="card_silde">
-                        <img src="./images/explore/amsterdam.jpg" alt="amsterdam">
-                        <div>
-                            <div class="card_silde_title">Amsterdam</div>
-                            <p>3 761 établissements</p>
-                        </div>
-                    </div>
-
-                    <div class="card_silde">
-                        <img src="./images/explore/bruxelles.jpg" alt="bruxelles">
-                        <div>
-                            <div class="card_silde_title">Bruxelles</div>
-                            <p>595 établissements</p>
-                        </div>
-                    </div>
-
-                    <div class="card_silde">
-                        <img src="./images/explore/budapest.jpg" alt="budapest">
-                        <div>
-                            <div class="card_silde_title">Budapest</div>
-                            <p>1 403 établissements</p>
-                        </div>
-                    </div>
-
-                    <div class="card_silde">
-                        <img src="./images/explore/edimbourg.jpg" alt="edimbourg">
-                        <div>
-                            <div class="card_silde_title">Edimbourg</div>
-                            <p>736 établissements</p>
-                        </div>
-                    </div>
-
-                    <div class="card_silde">
-                        <img src="./images/explore/lisbonne.jpg" alt="lisbonne">
-                        <div>
-                            <div class="card_silde_title">Lisbonne</div>
-                            <p>1 164 établissements</p>
-                        </div>
-                    </div>
-
-                    <div class="card_silde">
-                        <img src="./images/explore/londres.jpg" alt="londres">
-                        <div>
-                            <div class="card_silde_title">Londres</div>
-                            <p>473 établissements</p>
-                        </div>
-                    </div>
-
-                    <div class="card_silde">
-                        <img src="./images/explore/porto.jpg" alt="porto">
-                        <div>
-                            <div class="card_silde_title">Porto</div>
-                            <p>636 établissements</p>
-                        </div>
-                    </div>
-
-                    <div class="card_silde">
-                        <img src="./images/explore/stockholm.jpg" alt="stockholm">
-                        <div>
-                            <div class="card_silde_title">Stockholm</div>
-                            <p>2 368 établissements</p>
-                        </div>
-                    </div>
-
-                    <div class="card_silde">
-                        <img src="./images/explore/venise.jpg" alt="venise">
-                        <div>
-                            <div class="card_silde_title">Venise</div>
-                            <p>157 établissements</p>
-                        </div>
-                    </div>
-
-                    <div class="card_silde">
-                        <img src="./images/explore/vienne.jpg" alt="vienne">
-                        <div>
-                            <div class="card_silde_title">Vienne</div>
-                            <p>589 établissements</p>
-                        </div>
-                    </div>
-
-            </div>`;
+        
+        sildeBox2.style.left = `${"-" + (count2 * 225)}px`;
 
     });
 
@@ -468,7 +100,7 @@ silderNum3()
 
 function silderNum3() {
 
-    const sildeBox3 = document.querySelector(".bloc_05_sildebox");
+    const sildeBox3 = document.querySelector(".silde5_elements");
     const buttonLeft3 = document.querySelector(".silde_left_3");
     const buttonRight3 = document.querySelector(".silde_right_3");
     let count3 = 0
@@ -488,82 +120,7 @@ function silderNum3() {
             count3 = count3
         }
 
-        sildeBox3.innerHTML = `
-        <div class="silde5_elements" style="left: ${"-" + (count3 * 281.5)}px">
-
-            <div class="card_silde_2">
-                <img src="./images/escape/athène.jpg" alt="athène">
-                <div>
-                    <div class="card_silde_title">Athène</div>
-                    <p>Grèce</p>
-                    <p>Dès <span>25 €</span></p>
-                </div>
-            </div>
-
-            <div class="card_silde_2">
-                <img src="./images/escape/bucarest.jpg" alt="bucarest">
-                <div>
-                    <div class="card_silde_title">Bucarest</div>
-                    <p>Roumanie</p>
-                    <p>Dès <span>28 €</span></p>
-                </div>
-            </div>
-
-            <div class="card_silde_2">
-                <img src="./images/escape/luxembourg.jpg" alt="luxembourg">
-                <div>
-                    <div class="card_silde_title">Luxembourg</div>
-                    <p>Luxembourg</p>
-                    <p>Dès <span>45 €</span></p>
-                </div>
-            </div>
-
-            <div class="card_silde_2">
-                <img src="./images/escape/madrid.jpeg" alt="madrid">
-                <div>
-                    <div class="card_silde_title">Madrid</div>
-                    <p>Espagne</p>
-                    <p>Dès <span>32 €</span></p>
-                </div>
-            </div>
-
-            <div class="card_silde_2">
-                <img src="./images/escape/monaco.jpeg" alt="monaco">
-                <div>
-                    <div class="card_silde_title">Monaco</div>
-                    <p>Monaco</p>
-                    <p>Dès <span>87 €</span></p>
-                </div>
-            </div>
-
-            <div class="card_silde_2">
-                <img src="./images/escape/sofia.jpg" alt="sofia">
-                <div>
-                    <div class="card_silde_title">Sofia</div>
-                    <p>Bulgarie</p>
-                    <p>Dès <span>34 €</span></p>
-                </div>
-            </div>
-
-            <div class="card_silde_2">
-                <img src="./images/escape/varsovie.jpg" alt="varsovie">
-                <div>
-                    <div class="card_silde_title">Varsovie</div>
-                    <p>Pologne</p>
-                    <p>Dès <span>26 €</span></p>
-                </div>
-            </div>
-
-            <div class="card_silde_2">
-                <img src="./images/escape/zagreb.jpeg" alt="zagreb">
-                <div>
-                    <div class="card_silde_title">Zagreb</div>
-                    <p>Croatie</p>
-                    <p>Dès <span>45 €</span></p>
-                </div>
-            </div>
-
-        </div>`;
+        sildeBox3.style.left = `${"-" + (count3 * 281.5)}px`;
     });
 
     buttonLeft3.addEventListener('click', ()=> {
@@ -580,82 +137,7 @@ function silderNum3() {
             count3 = count3
         }
             
-        sildeBox3.innerHTML = `
-        <div class="silde5_elements" style="left: ${"-" + (count3 * 281.5)}px">
-
-            <div class="card_silde_2">
-                <img src="./images/escape/athène.jpg" alt="athène">
-                <div>
-                    <div class="card_silde_title">Athène</div>
-                    <p>Grèce</p>
-                    <p>Dès <span>25 €</span></p>
-                </div>
-            </div>
-
-            <div class="card_silde_2">
-                <img src="./images/escape/bucarest.jpg" alt="bucarest">
-                <div>
-                    <div class="card_silde_title">Bucarest</div>
-                    <p>Roumanie</p>
-                    <p>Dès <span>28 €</span></p>
-                </div>
-            </div>
-
-            <div class="card_silde_2">
-                <img src="./images/escape/luxembourg.jpg" alt="luxembourg">
-                <div>
-                    <div class="card_silde_title">Luxembourg</div>
-                    <p>Luxembourg</p>
-                    <p>Dès <span>45 €</span></p>
-                </div>
-            </div>
-
-            <div class="card_silde_2">
-                <img src="./images/escape/madrid.jpeg" alt="madrid">
-                <div>
-                    <div class="card_silde_title">Madrid</div>
-                    <p>Espagne</p>
-                    <p>Dès <span>32 €</span></p>
-                </div>
-            </div>
-
-            <div class="card_silde_2">
-                <img src="./images/escape/monaco.jpeg" alt="monaco">
-                <div>
-                    <div class="card_silde_title">Monaco</div>
-                    <p>Monaco</p>
-                    <p>Dès <span>87 €</span></p>
-                </div>
-            </div>
-
-            <div class="card_silde_2">
-                <img src="./images/escape/sofia.jpg" alt="sofia">
-                <div>
-                    <div class="card_silde_title">Sofia</div>
-                    <p>Bulgarie</p>
-                    <p>Dès <span>34 €</span></p>
-                </div>
-            </div>
-
-            <div class="card_silde_2">
-                <img src="./images/escape/varsovie.jpg" alt="varsovie">
-                <div>
-                    <div class="card_silde_title">Varsovie</div>
-                    <p>Pologne</p>
-                    <p>Dès <span>26 €</span></p>
-                </div>
-            </div>
-
-            <div class="card_silde_2">
-                <img src="./images/escape/zagreb.jpeg" alt="zagreb">
-                <div>
-                    <div class="card_silde_title">Zagreb</div>
-                    <p>Croatie</p>
-                    <p>Dès <span>45 €</span></p>
-                </div>
-            </div>
-
-        </div>`;
+        sildeBox3.style.left = `${"-" + (count3 * 281.5)}px`;
 
     });
 
@@ -665,7 +147,7 @@ silderNum4()
 
 function silderNum4() {
 
-    const sildeBox3 = document.querySelector(".bloc_07_sildebox");
+    const sildeBox3 = document.querySelector(".silde7_elements");
     const buttonLeft3 = document.querySelector(".silde_left_4");
     const buttonRight3 = document.querySelector(".silde_right_4");
     let count3 = 0
@@ -685,111 +167,7 @@ function silderNum4() {
             count3 = count3
         }
 
-        sildeBox3.innerHTML = `
-        <div class="silde7_elements" style="left: ${"-" + (count3 * 281.5)}px">
-
-        <div class="card_silde_2 card_silde_7">
-            <img src="./images/note/in01.jpg" alt="chambre">
-            <div class="card_silde7_text">
-                <p>Villa Rokk</p>
-                <p>Barcelone</p>
-                <p class="price7">Dès 2 449 €</p>
-            </div>
-            <div class="card7_note">
-                <div>9,5</div>
-                <p><span>Exceptionnel </span>. 17 expériences vécues</p>
-            </div>
-        </div>
-
-        <div class="card_silde_2 card_silde_7">
-            <img src="./images/note/in02.jpg" alt="chambre">
-            <div class="card_silde7_text">
-                <p>Villa Domina</p>
-                <p>Noyer</p>
-                <p class="price7">Dès 79 €</p>
-            </div>
-            <div class="card7_note">
-                <div>9,5</div>
-                <p><span>Exceptionnel </span>. 967 expériences vécues</p>
-            </div>
-        </div>
-
-        <div class="card_silde_2 card_silde_7">
-            <img src="./images/note/in03.jpg" alt="chambre">
-            <div class="card_silde7_text">
-                <p>Appartamento Benincampi</p>
-                <p>Rome</p>
-                <p class="price7">Dès 206 €</p>
-            </div>
-            <div class="card7_note">
-                <div>9,7</div>
-                <p><span>Exceptionnel </span>. 77 expériences vécues</p>
-            </div>
-        </div>
-
-        <div class="card_silde_2 card_silde_7">
-            <img src="./images/note/in04.jpg" alt="chambre">
-            <div class="card_silde7_text">
-                <p>Casa Portuguesa Prata</p>
-                <p>Lisbonne</p>
-                <p class="price7">Dès 349 €</p>
-            </div>
-            <div class="card7_note">
-                <div>8,7</div>
-                <p><span>Exceptionnel </span>. 85 expériences vécues</p>
-            </div>
-        </div>
-
-        <div class="card_silde_2 card_silde_7">
-            <img src="./images/note/in05.jpg" alt="chambre">
-            <div class="card_silde7_text">
-                <p>Urbana Hipster Downtown</p>
-                <p>Budapest</p>
-                <p class="price7">Dès 2 449 €</p>
-            </div>
-            <div class="card7_note">
-                <div>9,2</div>
-                <p><span>Exceptionnel </span>. 53 expériences vécues</p>
-            </div>
-        </div>
-
-        <div class="card_silde_2 card_silde_7">
-            <img src="./images/note/in06.jpg" alt="chambre">
-            <div class="card_silde7_text">
-                <p>Villa Pollo</p>
-                <p>Madrid</p>
-                <p class="price7">Dès 2 449 €</p>
-            </div>
-            <div class="card7_note">
-                <div>7,5</div>
-                <p><span>Exceptionnel </span>. 38 expériences vécues</p>
-            </div>
-        </div>
-
-        <div class="card_silde_2 card_silde_7">
-            <img src="./images/note/in07.jpg" alt="chambre">
-            <div class="card_silde7_text">
-                <p>Atypiskt Hus</p>
-                <p>Stockholm</p>
-                <p class="price7">Dès 1 249 €</p>
-            </div>
-            <div class="card7_note">
-                <div>10</div>
-                <p><span>Exceptionnel </span>. 1 expérience vécue</p>
-            </div>
-        </div>
-
-        <div class="card_silde_2 easter_egg">
-        <img src="./images/note/moi.jpg" alt="un super développeur web">
-        <div class="easter_egg_text">
-            <div>Besoin d'un développeur web, front-end ?<br> Ne cherchez plus celui qui a créé ce site "clone" fait l'affaire.</div>
-
-            <button id="easteregg"><a href="https://github.com/FabioDevCode" target="_blank">Découvrir son Github</a></button>
-        </div>
-
-    </div>
-
-    </div>`;
+        sildeBox3.style.left = `${"-" + (count3 * 281.5)}px`;
     });
 
     buttonLeft3.addEventListener('click', ()=> {
@@ -806,115 +184,296 @@ function silderNum4() {
             count3 = count3
         }
             
-        sildeBox3.innerHTML = `
-        <div class="silde7_elements" style="left: ${"-" + (count3 * 281.5)}px">
-
-        <div class="card_silde_2 card_silde_7">
-            <img src="./images/note/in01.jpg" alt="chambre">
-            <div class="card_silde7_text">
-                <p>Villa Rokk</p>
-                <p>Barcelone</p>
-                <p class="price7">Dès 2 449 €</p>
-            </div>
-            <div class="card7_note">
-                <div>9,5</div>
-                <p><span>Exceptionnel </span>. 17 expériences vécues</p>
-            </div>
-        </div>
-
-        <div class="card_silde_2 card_silde_7">
-            <img src="./images/note/in02.jpg" alt="chambre">
-            <div class="card_silde7_text">
-                <p>Villa Domina</p>
-                <p>Noyer</p>
-                <p class="price7">Dès 79 €</p>
-            </div>
-            <div class="card7_note">
-                <div>9,5</div>
-                <p><span>Exceptionnel </span>. 967 expériences vécues</p>
-            </div>
-        </div>
-
-        <div class="card_silde_2 card_silde_7">
-            <img src="./images/note/in03.jpg" alt="chambre">
-            <div class="card_silde7_text">
-                <p>Appartamento Benincampi</p>
-                <p>Rome</p>
-                <p class="price7">Dès 206 €</p>
-            </div>
-            <div class="card7_note">
-                <div>9,7</div>
-                <p><span>Exceptionnel </span>. 77 expériences vécues</p>
-            </div>
-        </div>
-
-        <div class="card_silde_2 card_silde_7">
-            <img src="./images/note/in04.jpg" alt="chambre">
-            <div class="card_silde7_text">
-                <p>Casa Portuguesa Prata</p>
-                <p>Lisbonne</p>
-                <p class="price7">Dès 349 €</p>
-            </div>
-            <div class="card7_note">
-                <div>8,7</div>
-                <p><span>Exceptionnel </span>. 85 expériences vécues</p>
-            </div>
-        </div>
-
-        <div class="card_silde_2 card_silde_7">
-            <img src="./images/note/in05.jpg" alt="chambre">
-            <div class="card_silde7_text">
-                <p>Urbana Hipster Downtown</p>
-                <p>Budapest</p>
-                <p class="price7">Dès 2 449 €</p>
-            </div>
-            <div class="card7_note">
-                <div>9,2</div>
-                <p><span>Exceptionnel </span>. 53 expériences vécues</p>
-            </div>
-        </div>
-
-        <div class="card_silde_2 card_silde_7">
-            <img src="./images/note/in06.jpg" alt="chambre">
-            <div class="card_silde7_text">
-                <p>Villa Pollo</p>
-                <p>Madrid</p>
-                <p class="price7">Dès 2 449 €</p>
-            </div>
-            <div class="card7_note">
-                <div>7,5</div>
-                <p><span>Exceptionnel </span>. 38 expériences vécues</p>
-            </div>
-        </div>
-
-        <div class="card_silde_2 card_silde_7">
-            <img src="./images/note/in07.jpg" alt="chambre">
-            <div class="card_silde7_text">
-                <p>Atypiskt Hus</p>
-                <p>Stockholm</p>
-                <p class="price7">Dès 1 249 €</p>
-            </div>
-            <div class="card7_note">
-                <div>10</div>
-                <p><span>Exceptionnel </span>. 1 expérience vécue</p>
-            </div>
-        </div>
-
-        <div class="card_silde_2 easter_egg">
-        <img src="./images/note/moi.jpg" alt="un super développeur web">
-        <div class="easter_egg_text">
-            <div>Besoin d'un développeur web, front-end ?<br> Ne cherchez plus celui qui a créé ce site "clone" fait l'affaire.</div>
-
-            <button id="easteregg"><a href="https://github.com/FabioDevCode" target="_blank">Découvrir son Github</a></button>
-        </div>
-
-    </div>
-
-    </div>`;
-
+        sildeBox3.style.left = `${"-" + (count3 * 281.5)}px`;
     });
 
 }
+
+
+grillebutton()
+
+function grillebutton() {
+
+    const button101 = document.querySelector(".t101");
+    const button102 = document.querySelector(".t102");
+    const button103 = document.querySelector(".t103");
+
+    let zoneTxt = document.querySelector(".test_dyn10");
+
+    button102.addEventListener("click", function() {
+
+        button102.classList.add("active10");
+        button101.classList.remove("active10");
+        button103.classList.remove("active10");
+
+        zoneTxt.innerHTML = `
+        <div>Zermatt<br>
+        556 hôtels</div>
+        <div>Lucerne<br>
+        188 hôtel</div>
+        <div>Lugano<br>
+        236 hôtels</div>
+        <div>Lausanne<br>
+        88 hôtels</div>
+        <div>Interlaken<br>
+        227 hôtels</div>
+        <div>Genève<br>
+        247 hôtels</div>
+        <div>Amsterdam<br>
+        1 893 hôtels</div>
+        <div>Ostende<br>
+        424 hôtels</div>
+        <div>Bruxelles<br>
+        1 157 hôtels</div>
+        <div>Luxembourg<br>
+        217 hôtels</div>
+        <div>Trouville-sur-Mer<br>
+        226 hôtels</div>
+        <div>Tours<br>
+        246 hôtels</div>
+        <div>Strasbourg<br>
+        675 hôtels</div>
+        <div>Saint-Raphaël<br>
+            534 hôtels</div>
+        <div>Saint-Malo<br>
+            545 hôtels</div>
+        <div>Saint-Jean-de-Luz<br>
+            347 hôtels</div>
+        <div>Les Saintes-Maries-de-la-Mer<br>
+            165 hôtels</div>
+        <div>Royan<br>
+            300 hôtels</div>
+        <div>Rouen<br>
+            392 hôtels</div>
+        <div>Rennes<br>
+            241 hôtels</div>
+        <div>Porto-Vecchio<br>
+            566 hôtels</div>
+        <div>Perpignan<br>
+            194 hôtels</div>
+        <div>Nantes<br>
+            438 hôtels</div>
+        <div>Les Sables dʼOlonne<br>
+            682 hôtel</div>
+        <div>Le Grau-du-Roi<br>
+            839 hôtels</div>
+        <div>Grenoble<br>
+            197 hôtels</div>
+        <div>Gérardmer<br>
+            286 hôtels</div>
+        <div>69 hôtels<br>
+        La Baule</div>
+        <div>Collioure<br>
+            224 hôtels</div>
+        <div>Clermont-Ferrand<br>
+            131 hôtels</div>
+            <div>Zermatt<br>
+        556 hôtels</div>
+        <div>Lucerne<br>
+        188 hôtel</div>
+        <div>Lugano<br>
+        236 hôtels</div>
+        <div>Lausanne<br>
+        88 hôtels</div>
+        <div>Interlaken<br>
+        227 hôtels</div>
+        <div>Genève<br>
+        247 hôtels</div>
+        <div>Amsterdam<br>
+        1 893 hôtels</div>
+        <div>Ostende<br>
+        424 hôtels</div>
+        <div>Bruxelles<br>
+        1 157 hôtels</div>
+        <div>Luxembourg<br>
+        217 hôtels</div>
+        <div>Trouville-sur-Mer<br>
+        226 hôtels</div>
+        <div>Tours<br>
+        246 hôtels</div>
+        <div>Strasbourg<br>
+        675 hôtels</div>
+        <div>Saint-Raphaël<br>
+            534 hôtels</div>
+        <div>Saint-Malo<br>
+            545 hôtels</div>
+        <div>Saint-Jean-de-Luz<br>
+            347 hôtels</div>
+        <div>Les Saintes-Maries-de-la-Mer<br>
+            165 hôtels</div>
+        <div>Royan<br>
+            300 hôtels</div>
+        <div>Rouen<br>
+            392 hôtels</div>
+        <div>Rennes<br>
+            241 hôtels</div>
+        <div>Porto-Vecchio<br>
+            566 hôtels</div>
+        <div>Perpignan<br>
+            194 hôtels</div>
+        <div>Nantes<br>
+            438 hôtels</div>
+        <div>Les Sables dʼOlonne<br>
+            682 hôtel</div>
+        <div>Le Grau-du-Roi<br>
+            839 hôtels</div>
+        <div>Grenoble<br>
+            197 hôtels</div>
+        <div>Gérardmer<br>
+            286 hôtels</div>
+        <div>69 hôtels<br>
+        La Baule</div>
+        <div>Collioure<br>
+            224 hôtels</div>
+        <div>Clermont-Ferrand<br>
+            131 hôtels</div>
+        `;
+
+    })
+
+    button101.addEventListener("click", function() {
+
+        button101.classList.add("active10");
+        button102.classList.remove("active10");
+        button103.classList.remove("active10");
+
+        zoneTxt.innerHTML = `
+        <div>
+                    État de New York<br>
+                    5 390 établissements
+                </div>
+                <div>
+                    Province de Phuket<br>
+                    5 495 établissements
+                </div>
+                <div>
+                    Bali<br>
+                    12 681 établissements
+                </div>
+                <div>
+                    Santorin<br>
+                    1 762 établissements
+                </div>
+                <div>
+                    Lac des Quatre-Cantons<br>
+                    350 établissements
+                </div>
+                <div>
+                    Île-de-France<br>
+                    12 208 établissements
+                </div>
+                <div>
+                    Corse<br>
+                    4 941 établissements
+                </div>
+                <div>
+                    Lac Léman<br>
+                    1 564 établissements
+                </div>
+                <div>
+                    Koh Samui<br>
+                    2 211 établissements
+                </div>
+                <div>
+                    Belle-Île-en-Mer<br>
+                    187 établissements
+                </div>
+                <div>
+                    Lac d'Annecy<br>
+                    938 établissements
+                </div>
+                <div>
+                    Grisons<br>
+                    2 986 établissements
+                </div>
+                <div>
+                    Gorges du Verdon<br>
+                    397 établissements
+                </div>
+                <div>
+                    Tahiti<br>
+                    367 établissements
+                </div>
+                <div>
+                    Lubéron<br>
+                    1 471 établissements
+                </div>
+                <div>
+                    Île de Ré<br>
+                    438 établissements
+                </div>
+                <div>
+                    Zanzibar<br>
+                    834 établissements
+                </div>
+                <div>
+                    Île d'Oléron<br>
+                    307 établissements
+                </div>
+                <div>
+                    Canton du Tessin<br>
+                    1 683 établissements
+                </div>
+                <div>
+                    Bora-Bora<br>
+                    59 établissement
+                </div>
+        `;
+
+    })
+
+    button103.addEventListener("click", function() {
+
+        button103.classList.add("active10");
+        button101.classList.remove("active10");
+        button102.classList.remove("active10");
+
+        zoneTxt.innerHTML = `
+        <div>Le Grau-du-Roi<br>
+            839 hôtels</div>
+        <div>Grenoble<br>
+            197 hôtels</div>
+        <div>Gérardmer<br>
+            286 hôtels</div>
+        <div>69 hôtels<br>
+        La Baule</div>
+        <div>Collioure<br>
+            224 hôtels</div>
+        <div>Clermont-Ferrand<br>
+            131 hôtels</div>
+            <div>Zermatt<br>
+        556 hôtels</div>
+        <div>Lucerne<br>
+        188 hôtel</div>
+        <div>Lugano<br>
+        236 hôtels</div>
+        <div>Lausanne<br>
+        88 hôtels</div>
+        <div>Interlaken<br>
+        227 hôtels</div>
+        <div>Genève<br>
+        247 hôtels</div>
+        <div>Amsterdam<br>
+        1 893 hôtels</div>
+        <div>Ostende<br>
+        424 hôtels</div>
+        <div>Bruxelles<br>
+        1 157 hôtels</div>
+        <div>Luxembourg<br>
+        217 hôtels</div>
+        <div>Trouville-sur-Mer<br>
+        226 hôtels</div>
+        <div>Tours<br>
+        246 hôtels</div>
+        <div>Strasbourg<br>
+        675 hôtels</div>
+        <div>Saint-Raphaël<br>
+            534 hôtels</div>
+        `;
+
+    })
+
+}
+
+
 //-----------------------------------------------------
-
-

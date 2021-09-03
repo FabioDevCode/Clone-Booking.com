@@ -976,7 +976,7 @@ main {
 }
 
 .easter_egg_text:hover {
-    background-color: rgba(0, 0, 0, .45);
+    background-color: rgba(0, 0, 0, .3);
 }
 
 .easter_egg_text div {
@@ -1054,7 +1054,467 @@ main {
     line-height: 20px;
 }
 
+/*---------------------------------------------*/
 
+.bloc_09 {
+    width: 1140px;
+    padding: 0 16px;
+    margin-top: 25px;
+    position: relative;
+    height: 380px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_09 {
+    cursor: pointer;
+    overflow: hidden;
+    height: 350px;
+    width: 264px;
+}
+
+.img_09 {
+    position: relative;
+    height: 220px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.img_09 img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img_text09 {
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 60%);
+}
+
+.img_text09 div {
+    font-weight: 800;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.text_09 a {
+    color: rgb(0, 170, 226);
+    border-bottom: 1px solid rgb(0, 170, 226);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.text_09 a:hover {
+    color: rgb(255, 196, 0);
+    border-bottom: 1px solid rgb(255, 196, 0);
+}
+
+/*---------------------------------------------*/
+
+.bloc_10 {
+    width: 1140px;
+    padding: 0 16px;
+    margin-top: 25px;
+    position: relative;
+    height: auto;
+}
+
+.bloc_10 h5 {
+    font-family: 'Segoe UI Bold', Arial, sans-serif;
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+
+.title_10 {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #0071C2;
+}
+
+.title_10 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: max-content;
+    cursor: pointer;
+    color: rgb(88, 88, 88);
+    font-size: 14px;
+    padding: 0 16px;
+}
+
+.title_10 div:hover {
+    color: #0071C2;
+}
+
+.active10 {
+    color: white !important;
+    background-color: #0071C2 !important;
+}
+
+.test_dyn10 {
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: max-content;
+}
+
+.test_dyn10 div {
+    font-size: 14px;
+    color: rgb(88, 88, 88);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 20%;
+    height: 50px;
+}
+
+/*----------------------------------------*/
+
+.bloc_11 {
+    width: 1140px;
+    padding: 0 16px;
+    margin-top: 35px;
+    position: relative;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+.bloc_11 h5 {
+    font-family: 'Segoe UI Bold', Arial, sans-serif;
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+
+.button_11 {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.button_11 div {
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    background-color: grey;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 6px;
+    width: max-content;
+    margin-right: 4px;
+}
+
+.button_11 div:hover {
+    background-color: #0071C2;
+}
+
+.button_11 div:nth-child(1) {
+    background-color: #0071C2;
+}
+
+.button_11 a {
+    color: #0071C2;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.button_11 a:hover {
+    color: rgb(255, 196, 0);
+}
+
+.bloc_carte_11 {
+    cursor: pointer;
+    overflow: hidden;
+    width: 19%;
+    height: 170px;
+}
+
+.card_11 {
+    position: relative;
+    height: 130px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card_11 img {
+    position: absolute;
+    z-index: 1;
+    
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+div.text_abso11 {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    z-index: 100;
+    font-size: 14px;
+    line-height: 20px;
+    height: 28px;
+    color: white;
+    padding: 4px 16px;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.text_11 {
+    color: #0071C2;
+    font-size: 14px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_11:hover .text_abso11 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: normal;
+}
+
+.bloc_carte_11:hover .text_11 {
+    color: rgb(255, 196, 0);
+}
+
+.section_card11 {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*-----------------------------------------------*/
+
+.bannier_12 {
+    color: white;
+    height: 250px;
+    width: 100%;
+    background-color: #00224F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannier_12 h6 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 4px;
+}
+
+.subtitle12 {
+    font-size: 16px;
+    color: lightgray;
+    margin-bottom: 25px;
+}
+
+.bloc_121 {
+    display: flex;
+    justify-content: space-between;
+    width: 547px;
+    height: 50px;
+}
+
+.bloc_121 input {
+    padding: 0 16px;
+    width: 380px;
+    border-radius: 4px;
+}
+
+.bloc_121 input.placeholder {
+    color: lightgrey;
+} 
+
+.bloc_121 button {
+    font-size: 18px;
+    width: 162px;
+    border-radius: 4px;
+    color: white;
+    background-color: #0071C2;
+}
+
+.bloc_122 {
+    margin-top: 10px;
+    width: 547px;
+    height: 20px;
+    display: flex
+}
+
+.bloc_122 input {
+    width: 15px;
+    margin-right: 2px;
+}
+
+.bloc_122 p {
+    font-size: 13px;
+}
+
+/*-----------------------------------*/
+
+.bannier_13 {
+    height: 100px;
+    width: 100%;
+    background-color: #003580;
+}
+
+.bannier_13 button {
+    cursor: pointer;
+    display: flex;
+    height: 28px;
+    line-height: 24px;
+    margin: 16px auto;
+    padding: 0 16px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.liens_13 {
+    border-top: 1px solid white;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.liens_13 div {
+    display: flex;
+    align-items: center;
+    height: 39px;
+    width: 1110px;
+}
+
+.liens_13 div a {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    height: 100%;
+    text-decoration: underline;
+}
+
+/*-------------------------------------*/
+
+footer {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 650px;
+    background-color: white;
+}
+
+#footer_foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1110px;
+}
+
+.foottitle {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.foot01 {
+    margin: 25px 0;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot01 div img {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
+
+.svg {
+    border-radius: 15px;
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.svg a svg {
+    height: 75px;
+}
+
+.foot02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1100px;
+}
+
+.foot02_title {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.bloc02foot_img {
+    display: flex;
+    
+}
+
+.bloc02foot_img a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 0 25px;
+}
+
+.bloc02foot_img a:nth-child(1) img {
+    height: 50px;
+}
+
+.bloc02foot_img a:nth-child(2) img {
+    height: 30px;
+}
+
+.bloc02foot_img a:nth-child(3) img {
+    height: 40px;
+}
 
 /*---------------------------------------*/
 
