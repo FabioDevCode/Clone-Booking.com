@@ -201,6 +201,7 @@ nav li ul {
     border-bottom: 2px solid transparent;
     padding: 16px;
     border-radius: 2px 2px 0 0;
+    flex-wrap: nowrap;
 }
 
 nav li ul:nth-child(1) {
@@ -1515,6 +1516,118 @@ footer p {
 .bloc02foot_img a:nth-child(3) img {
     height: 40px;
 }
+
+/*--------------RESPONSIVE--------------*/
+
+@media screen and (max-width: 1140px) {
+
+    header {
+        height: auto;
+        overflow: hidden;
+    }
+
+    .header_line_top {
+
+        height: 84px;
+        padding: 8px;
+        margin-bottom: 8px;
+
+    }
+
+    .connextions {
+
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+    }
+
+    .bannier_type01 {
+        height: auto;
+    }
+
+    .bannier_type01 section {
+        height: max-content;
+    }
+
+    .recherche_zone {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .recherche_zone input {
+        height: 52px;
+        margin-bottom: 4px;
+        margin-left: 0px;
+    }
+
+    .recherche_zone input:nth-child(1) {
+        width: 100%;
+
+    }
+
+    .recherche_zone input:nth-child(2) {
+        width: 49.4%;
+
+    }
+
+    .recherche_zone input:nth-child(3) {
+        width: 50%;
+    }
+
+    .recherche_zone button {
+        height: 52px;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+
+    
+}
+
+
+@media screen and (max-width: 1020px) {
+
+    .bannier_type01 section h1 {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    header .header_line_top .connextions .button_type02 {
+        display: none;
+    }
+
+    header .header_line_top .connextions .button_type01 {
+        display: none;
+    }
+
+    .bannier_type01 section h1 {
+        margin-bottom: 50px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    header .header_line_top .connextions .button_type02 {
+        display: none;
+    }
+
+    header .header_line_top .connextions .button_type01 {
+        display: none;
+    }
+
+    .bannier_type01 section h1 {
+        margin-bottom: 75px;
+    }
+
+}
+
+
+
 
 /*---------------------------------------*/
 

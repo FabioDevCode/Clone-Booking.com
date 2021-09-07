@@ -477,3 +477,6 @@ function grillebutton() {
 
 
 //-----------------------------------------------------
+
+
+console.log(window.innerWidth);
