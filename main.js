@@ -3,6 +3,8 @@ silderNum1()
 
 function silderNum1() {
 
+    
+
     const sildeBox = document.querySelector(".silde_elements");
     const buttonLeft = document.querySelector(".silde_left");
     const buttonRight = document.querySelector(".silde_right");
@@ -479,4 +481,3 @@ function grillebutton() {
 //-----------------------------------------------------
 
 
-console.log(window.innerWidth);
